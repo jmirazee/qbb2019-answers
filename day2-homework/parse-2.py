@@ -32,6 +32,9 @@ Print and fill the field with a default value
             
 import sys
 
+
+#"Hi. If you want to include genes that are not in your dictionary, type default in your third argument. Otherwise, type nothing"
+
 final_dict = {}
 
 for line in open(sys.argv[1]):
