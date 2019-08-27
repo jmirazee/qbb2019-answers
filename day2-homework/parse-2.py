@@ -46,7 +46,7 @@ for line in open(sys.argv[2]):
     gene_id = columnz[8]
     
     
-    if gene_id == " ":
+    if gene_id not in final_dict and sys.argv[3] == "nothing":
         continue    
     elif gene_id not in final_dict and sys.argv[3] == "default":
         print("false")
