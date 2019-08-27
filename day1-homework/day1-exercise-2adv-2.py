@@ -15,23 +15,22 @@ if len(sys.argv)>1:
     f = open(sys.argv[1])
 else:
     f = sys.stdin
-    
+
+scores_above_30 = 0  
+  
 for line in f:
     line = line.rstrip("\n")
     fields = line.split("\t")
-    storage = []
-    storage = (fields[10])
-    
-print(storage) # only printed one
-
-for character in storage:
-    value_ord = ord(character)
-#print(value_ord) # got 67
-
-final_list = ''
-if value_ord > 30:
-    final_list += str(value_ord)
-print(final_list)
+    storage = fields[10]
+    total = 0
+    count = 0
+    for char in storage:
+        total += ord(char) - 33
+        count += 1
+    avg_score = float(total)/count
+    if avg_score > 30:
+        scores_above_30 += 1
+print(scores_above_30)
     
 
 
