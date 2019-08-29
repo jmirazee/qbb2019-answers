@@ -27,9 +27,11 @@ query = FASTAReader(open(sys.argv[2])) # this is query file
 k = int(sys.argv[3])
 
 target_dictionary = {}
+name_dictionary = {}
 
 #replace query with target 
 for name_t, sequence_t in target:
+    name_dictionary[name_t] = sequence_t
     for i in range(0, len(sequence_t) - k + 1):
         kmer_t = sequence_t[i:i+k].upper()
         target_tuple = (name_t, i)
@@ -42,7 +44,7 @@ for name_q, sequence_q in query:
     for i in range(0, len(sequence_q) - k + 1):
         kmer_q = sequence_q[i:i+k].upper()
         if kmer_q in target_dictionary:
-            print(target_dictionary[kmer_q], i, kmer_q)
+            print(target_tuple, i, kmer_q)
             
             # for each kmer, we want to show name_T, i, i, kmer_q 
             # kmer1
