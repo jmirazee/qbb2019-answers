@@ -36,19 +36,18 @@ high = float(len(gene_list)-1)
 mid = float((high+low)/2)
 
 while(low<=high):
-    mid = float((high+low)/2)
-    mid = x
+    mid = (high+low)/2
+    #mid = x
     number_iterations = number_iterations +1
-    if number_iterations > 10:
-    for gene_list(mid):
-        if int(gene_list[-1]) < snp_pos:
+    #for gene_list(mid):
+    if int(gene_list[-1]) < snp_pos:
         break
     if gene_list[x][-1] > snp_pos:
         high = mid
     elif gene_list[x][-1] < snp_pos:
         low = mid
     elif gene_list[x][-1] == snp_pos:
-        found = True
+        
     
 print(number_iterations)
     
