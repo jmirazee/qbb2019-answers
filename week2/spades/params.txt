@@ -1,0 +1,35 @@
+Command line: /Users/cmdb/miniconda3/bin/spades.py	-s	/Users/cmdb/qbb2019-answers/20190913/reads_low_1.fastq	-s	/Users/cmdb/qbb2019-answers/20190913/reads_low_2.fastq	-o	/Users/cmdb/qbb2019-answers/20190913/spades	
+
+System information:
+  SPAdes version: 3.13.1
+  Python version: 3.6.7
+  OS: Darwin-18.7.0-x86_64-i386-64bit
+
+Output dir: /Users/cmdb/qbb2019-answers/20190913/spades
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/Users/cmdb/qbb2019-answers/20190913/reads_low_1.fastq', '/Users/cmdb/qbb2019-answers/20190913/reads_low_2.fastq']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /Users/cmdb/qbb2019-answers/20190913/spades/tmp
+  Threads: 16
+  Memory limit (in Gb): 250
+
