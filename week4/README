@@ -1,0 +1,22 @@
+Class notes (9/27/19)
+
+Genome wide association studies: Common disease common variant
+Penentrence of common variants is low (percent of phenotypes that actually show the disease phenotytype)
+
+Multiple alleles influence disease suceptiblity
+
+one hypothesis test between every disease an SNP pair
+
+***MULTIPLE TESTING PROBLEM***
+
+P VALUE = the probability that you reject the null incorrectly. 
+
+Can correct:
+-remove any type 1 error across all familites: Bonferroni. Divide original critical value / number of tests
+
+
+-control fraction of type 1 errors (FDR)
+
+-Batch effect: Need to randomize
+
+
